@@ -18,7 +18,7 @@ The environment consists of:
 
 <table><tr><td>The input of the sensors behaves like having a source of light or heat radiating to all directions, so it is governed by the inverse square law. When we have multiple sources, the total radiation is the sum of the radiation the sensor receives from each source.</td><td><img src="MEDIA/inv_square_law.png" width="1000px"></td></tr><table>
 
-<table><tr><td><img src="MEDIA/collision_constraint.gif" width="1500px"></td><td>The constraints are blocks that move randomly within a radius from their start position. The vehicles bounce off these blocks, since a force is exerted on them upon impact, and there is a damping force that limits this bounce to not be very big.</td></tr><table>
+<table><tr><td><img src="MEDIA/collision_constraint.gif" width="100%"></td><td>The constraints are blocks that move randomly within a radius from their start position. The vehicles bounce off these blocks, since a force is exerted on them upon impact, and there is a damping force that limits this bounce to not be very big.</td></tr><table>
 
 Also, since this environment consists of multiple vehicles, in order for them to not collide with each other (although they still do, but less), I added a repelling force for each pair of vehicles, that is stronger when the vehicles are closer.
 
