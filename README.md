@@ -29,5 +29,5 @@ There are some input boxes, where you can insert the number of vehicles, constra
 The function input is given a string of 5 parameters: the type of the function, which can be: *inc* -> increasing function, *dec* -> decreasing, *inc_dec* -> increasing then decreasing, *dec_inc* -> decreasing then increasing. Also, $x_{0}$ and $y_{0}$, the turning point of the function ($x_{0}$ and $y_{0}$ are in the range $[0,1]$ and the output is then scaled based on that), and $slope\ up$ and $slope\ down$ which are the slopes of the function in the increasing and decreasing points respectively. The string overall is: $$function \textunderscore type\  x_{0}\  y_{0}\  slope \textunderscore up \  slope \textunderscore down$$
 
 ## Run
-To run the program, just unzip the zip folder (you can find it in `releases`), find `Braitenberg Vehicle Simulator.exe` and run it.\
+To run the program, just unzip the zip folder (you can find it in https://github.com/pliam1105/Braitenberg-Vehicle-Simulator/releases/latest), find `Braitenberg Vehicle Simulator.exe` and run it.\
 Pressing the run button it generates a random configuration with the required parameters (you can do that as many times as you want, it will reset the environment and create a new one).
