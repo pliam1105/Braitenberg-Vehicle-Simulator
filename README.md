@@ -6,20 +6,20 @@ https://github.com/pliam1105/Braitenberg-Vehicle-Simulator/assets/34167782/f8d6c
 ## Overview
 The environment consists of:
 * Some *vehicles*, which have two sensor positions, with a set of sensors in each one, and two motors, whose speed is determined by the sensor output.
-<table><tr><td align="center"><img src="MEDIA/vehicle.png" width="50%"></td></tr><table><br>
+<table align="center"><tr><td align="center"><img src="MEDIA/vehicle.png" width="50%"></td></tr><table><br>
 
 * Some *sources*, which radiate some type e.g. heat, temperature, which is represented from a number in $[0, number\ of\ types-1]$
-<table><tr><td align="center"><img src="MEDIA/sourcebig.png" width="50%"></td></tr><table><br>
+<table align="center"><tr><td align="center"><img src="MEDIA/sourcebig.png" width="50%"></td></tr><table><br>
 
 * Some *constraints*, which are some time-dependent areas where the vehicles cannot enter (they are represented by blocks with walls where the vehicles bounce on)
-<table><tr><td align="center"><img src="MEDIA/constraintbig.png" width="50%"></td></tr><table><br>
+<table align="center"><tr><td align="center"><img src="MEDIA/constraintbig.png" width="50%"></td></tr><table><br>
 
 <table><tr><td><img src="MEDIA/brait_sensors_diagram.png" width="1000px"></td><td>The basic characteristic of Braitenberg Vehicles is that the speed of each motor is determined either from the input of the corresponding sensor (on the same side), or the opposite one, and this change of connections, as well as the function with which the sensor input is connected to the motor speed, can determine the vehicle's behavior.</td></tr><table>
 
 <table><tr><td>The input of the sensors behaves like having a source of light or heat radiating to all directions, so it is governed by the inverse square law. When we have multiple sources, the total radiation is the sum of the radiation the sensor receives from each source.</td><td><img src="MEDIA/inv_square_law.png" width="1000px"></td></tr><table>
 
 The constraints are blocks that move randomly within a radius from their start position. The vehicles bounce off these blocks, since a force is exerted on them upon impact, and there is a damping force that limits this bounce to not be very big.
-<table><tr><td align="center"><img src="MEDIA/collision_constraint.gif" width="50%"></td></tr><table><br>
+<table align="center"><tr><td align="center"><img src="MEDIA/collision_constraint.gif" width="80%"></td></tr><table><br>
 Also, since this environment consists of multiple vehicles, in order for them to not collide with each other (although they still do, but less), I added a repelling force for each pair of vehicles, that is stronger when the vehicles are closer.
 
 ## Input
