@@ -30,4 +30,4 @@ The function input is given a string of 5 parameters: the type of the function, 
 
 ## Run
 To run the program, just unzip the zip folder (you can find it in [releases](https://github.com/pliam1105/Braitenberg-Vehicle-Simulator/releases/latest)), find `Braitenberg Vehicle Simulator.exe` and run it.\
-Pressing the run button it generates a random configuration with the required parameters (you can do that as many times as you want, it will reset the environment and create a new one).
+Pressing the run button generates a random configuration with the required parameters (you can do that as many times as you want, it will reset the environment and create a new one).
